@@ -1,0 +1,448 @@
+/*
+* Fuentes
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/*
+* Estilos base
+*/
+
+body {
+    background-color: antiquewhite;
+    margin: 120px 0 0 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    color: black;
+    font-size: 15px;
+}
+
+section {
+    padding: 30px 0;
+}
+
+section h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* --- CONTENEDOR PRINCIPAL FORMULARIO --- */
+.formulario-box {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 100, 0.15);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- TÍTULO --- */
+.formulario-box h2 {
+    text-align: center;
+    color: #003c8f;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* --- LABELS --- */
+.formulario-box label {
+    display: block;
+    margin-top: 18px;
+    font-weight: bold;
+    color: #1b1b1b;
+    font-size: 16px;
+}
+
+/* --- CAMPOS --- */
+.formulario-box input,
+.formulario-box select,
+.formulario-box textarea {
+    width: 100%;
+    padding: 14px;
+    margin-top: 6px;
+    border: 2px solid #c7d5f3;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.25s ease-in-out;
+    background: #f7f9ff;
+}
+
+/* Foco azul con glow */
+.formulario-box input:focus,
+.formulario-box select:focus,
+.formulario-box textarea:focus {
+    outline: none;
+    border-color: #0057e7;
+    box-shadow: 0 0 8px rgba(0, 87, 231, 0.4);
+    background: #ffffff;
+}
+
+/* --- BOTÓN --- */
+.formulario-box button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 16px;
+    background: #0057e7;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    letter-spacing: 0.5px;
+}
+
+.formulario-box button:hover {
+    background: #003fb5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,80,0.2);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 480px) {
+.formulario-box {
+    margin: 20px;
+    padding: 25px;
+    }
+.formulario-box h2 {
+    font-size: 22px;
+    }
+}
+
+/*
+* Clases comunes
+*/
+
+.texto-blanco {
+    color: black;
+}
+
+/*
+* Header
+*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    padding-right: 20px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a:hover {
+    color: #0695d6;
+    text-decoration: underline;
+}
+
+header .logo {
+    width: 200px;
+}
+
+header button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+header nav {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 120px;
+    width: 100%;
+    }
+
+.oculto {
+    display: none;
+    }
+    
+header nav ul {
+    flex-direction: column;
+    }
+
+header nav ul li {
+    text-align: right;
+    margin-bottom: 30px;
+    padding-right: 30px;
+    }
+
+header button {
+    background-color: transparent;
+    border: 0;
+    display: block;
+    }
+
+header button i {
+    font-size: 30px;
+    }
+
+}
+
+/*
+* Presentacion
+*/
+ 
+#presentacion {
+    background-image: url('img/banner.jpg');
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#presentacion h1 {
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    position: relative;
+}
+
+#presentacion h1 strong {
+    background-color: #010101;
+}
+
+#presentacion .cuadrado {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+
+#presentacion h1 {
+    font-size: 50px;
+    }
+    
+}
+/*
+* Curso
+*/
+
+#curso h2 {
+    background-color: #76c6eb;
+    margin: 20px auto; /* Top-bottom 20px left-right auto para que se centre */
+    text-align: center;
+}
+
+#curso img {
+    width: 150px;
+}
+
+
+#curso .contenedor-iconos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#curso button {
+    background-color: #0695d6;
+    color: black;
+    font-size: 20px;
+    display: block;
+    margin: 50px auto 0;
+    padding: 10px 0;
+    width: 300px;
+    border-radius: 20px;
+    border: 0;
+}
+
+.icono {
+    position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.icono:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*
+* Programa
+*/
+
+#programa {
+    background-color: #76c6eb;
+}
+
+#programa .contenedor-programa {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#programa .contenedor-programa div {
+    width: 45%;
+    padding: 0 20px;
+}
+
+#programa .contenedor-programa div h3
+{
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+
+#programa .contenedor-programa div p {
+    color: black;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+        position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 260px;                
+    background: #e3f0ff;        
+    color: #000;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 90, 255, 0.35);
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* FLECHITA A LA DERECHA */
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #3383df transparent transparent;
+}
+
+/* Mostrar tooltip */
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*
+* Footer
+*/
+footer {
+    display: flex;
+    padding: 30px 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .social ul {
+    display: flex;
+    list-style: none;
+}
+
+footer p {
+    text-align: right;
+}
+
+footer .mail {
+    color: #179ddb;
+}
+
+
+@media (max-width: 768px) {
+
+    footer {
+        display: block;
+    }
+
+    footer .social ul {
+        padding-left: 0;
+    }
+
+    footer p {
+        text-align: left;
+    }
+
+    
+}
+
+
+
+
+
+
+

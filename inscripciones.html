@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCT Santa Fe - Plataforma de Cursos</title>
+    <!-- Librerías -->
+    <script src="https://kit.fontawesome.com/7772ac007f.js" crossorigin="anonymous"></script>
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="estilos.css">
+   </head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img class="logo" src="img/CCT-SANTA-FE.png" alt="Logo">
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="curso1.html">Cursos</a>
+                </li>
+                <li>
+                    <a href="inscripciones.html">Inscripciones</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+         <div class="formulario-box">
+    <h2>Formulario de Inscripción</h2>
+
+    <form>
+
+        <label>Nombre completo</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Teléfono</label>
+        <input type="text">
+
+        <label>Curso</label>
+        <select required>
+            <option value="">Seleccionar…</option>
+            <option>Introducción a la Documentación Administrativa</option>
+            <option>Introducción al procedimiento de contrataciones de la Administración Pública Nacional</option>
+            <option>Metodologías ágiles para la gestión de proyectos</option>
+            <option>Excel Básico</option>
+            <option>Excel 2010 - Funciones avanzadas</option>
+            <option>Excel 2010 - Tablas dinámicas</option>
+        </select>
+
+        <label>Mensaje</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+</div>
+    </main>
+    
+    <footer id="inscripciones">
+        <div class="social">
+            <ul>
+                <li>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </li>
+            </ul>
+
+        </div>
+        <div>
+            <p>Para consultas comunicate con: <br><a class="mail" href="mailto:rrhh@santafe-conicet.gov.ar"> <strong>rrhh@santafe-conicet.gov.ar</strong></a></p>
+        </div>
+    </footer>    
+</body>
+</html>
