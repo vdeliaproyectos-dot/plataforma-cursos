@@ -426,6 +426,9 @@ footer .mail {
 
 @media (max-width: 768px) {
 
+    #programa .contenedor-programa div {
+  width: 100%; 
+}
     footer {
         display: block;
     }
