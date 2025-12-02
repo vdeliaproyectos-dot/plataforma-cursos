@@ -16,6 +16,7 @@ body {
 
 img {
     max-width: 100%;
+    padding-top: 50px;
 }
 
 p {
@@ -175,6 +176,7 @@ header nav ul li a:hover {
 
 header .logo {
     width: 200px;
+    padding-bottom: 50px;
 }
 
 header button {
@@ -367,7 +369,7 @@ header button i {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease;
-        position: absolute;
+    position: absolute;
     left: 50%; 
     top: 50%;
     transform: translateY(-50%);
